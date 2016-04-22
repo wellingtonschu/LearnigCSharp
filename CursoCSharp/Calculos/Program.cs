@@ -13,12 +13,18 @@ namespace Calculos
 
             double numero1;
             double numero2;
+            double soma;
 
-            Console.WriteLine("Digite o primeiro número: ");
+
+            Console.Write("Digite o primeiro número: ");
             numero1 = Convert.ToDouble(Console.ReadLine());
 
-            Console.WriteLine("Digite o segundo número: ");
+            Console.Write("Digite o segundo número: ");
             numero2 = Convert.ToDouble(Console.ReadLine());
+
+            soma = numero1 + numero2;
+
+            Console.WriteLine("A soma dos números é: " + soma);
 
             Console.ReadKey();
 
