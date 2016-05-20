@@ -15,7 +15,7 @@ namespace While
             double total = 0;
             string operacao = "+";
 
-            while(operacao != "=")
+            while (operacao != "=")
             {
 
                 Console.WriteLine("Informe o valor: ");
@@ -31,11 +31,11 @@ namespace While
 
                     case "-":
 
-                        total = total - numero;;
+                        total = total - numero; ;
                         break;
 
                     case "*":
-                        total = total * numero;;
+                        total = total * numero; ;
                         break;
 
                     case "/":
@@ -44,9 +44,12 @@ namespace While
 
                 }
 
+                Console.WriteLine("Informe a operação: ");
+                operacao = Console.ReadLine();
             }
 
-
+            Console.WriteLine("O resultado é: " + total);
+            Console.ReadKey();
         }
     }
 }
